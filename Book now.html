@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>booking form</title>
+<style>
+button{
+color:white;
+background-color:red;
+font-size:40px;
+border:none;
+border-radius:10px;
+margin:10px;
+}
+button:active{
+color:orange;
+background-color:skyblue;
+}
+</style>
+</head>
+<body>
+<script>
+function data()
+{
+       var a=document.getElementById("n1").value;
+       var b=document.getElementById("n2").value;
+       var c=document.getElementById("n3").value;
+       var d=document.getElementById("n4").value;
+       var e=document.getElementById("n5").value;
+       var f=document.getElementById("n6").value;
+       var g=document.getElementById("n7").value;
+       var h=document.getElementById("n8").value;
+       var i=document.getElementById("n9").value;
+
+     if(a==""||b==""||c==""||d==""||e==""||f==""||g==""||h==""||i=="")
+    {
+          alert("All Fields are mendatory");
+          return false;
+    }else
+    {
+          true;
+    }
+}
+</script>
+
+<form onsubmit="return data()" action="php.html">
+
+<b>First Name:<br><br>
+<input type="text" id="n1"><br><br>
+Last Name:<br><br>
+<input type="text" id="n2"><br><br>
+E-mail:<br><br>
+<input type="email" id="n3"><br><br>
+Phone Number:<br><br>
+<input type="tel" id="n4"><br><br>
+Address:<br><br>
+<input type="text" id="n5"><br><br>
+Rooms:<br><br>
+<input type="text" id="n6"><br><br>
+Arived Date:<br><br>
+<input type="date" id="n8"><br><br>
+Depart Date:<br><br>
+<input type="date" id="n9"></b>
+<br><br><br>
+<button>submit</button></form>
+</body>
+</html>
